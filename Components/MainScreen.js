@@ -56,10 +56,16 @@ const AppTabNavigator = TabNavigator(
           }
         })
       },
+      gesturesEnabled: false,
       activeTintColor: "#000",
       inactiveTintColor: "#d1cece",
       showLabel: false, //removes the text
       showIcon: true //requires for android
+    }
+  },
+  {
+    cardStack: {
+      gesturesEnabled: true
     }
   }
 );

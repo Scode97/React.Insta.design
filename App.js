@@ -1,15 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import { StackNavigator } from "react-navigation";
 
 import MainScreen from "./Components/MainScreen";
+import { defaultIfEmpty } from "./node_modules/rxjs/operators";
 
-export default class App extends React.Component {
+class App extends Component {
   render() {
     return <AppStackNavigator />;
   }
 }
+export default App;
 
 const AppStackNavigator = StackNavigator({
   Main: {
